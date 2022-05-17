@@ -59,4 +59,3 @@ jobs:
           sudo docker pull foorsalex/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 foorsalex/infra_actions
-#test
