@@ -54,7 +54,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
+        passphrase: 12345
         script: |
           sudo docker pull foorsalex/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
